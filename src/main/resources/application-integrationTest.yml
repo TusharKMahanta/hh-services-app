@@ -1,0 +1,1 @@
+spring.main.allow-bean-definition-overriding: true # To override the existing bean with mock bean
