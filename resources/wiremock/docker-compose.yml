@@ -1,0 +1,14 @@
+version: '2'
+services:
+  wiremock:
+    build: .
+    image: wiremock/wiremock:3.8.0
+    container_name: wiremock-standalone
+    ports: 
+      - "9090:8080"
+    volumes:
+    - ./files:/home/wiremock/__files
+    - ./mappings:/home/wiremock/mappings
+volumes:
+  files:
+  mappings:
