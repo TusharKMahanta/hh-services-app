@@ -1,1 +1,11 @@
 server.port: 8085
+
+spring:
+  data:
+    mongodb:
+      host: 'localhost'
+      port: '27017'
+      database: 'demo'
+      username: 'devroot'
+      password: 'devroot'
+      uri: 'mongodb://devroot:devroot@localhost:27017/admin'

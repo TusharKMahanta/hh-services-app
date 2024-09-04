@@ -16,6 +16,9 @@ public class ProductDTO {
     @Size(min = 0, max = 20)
     private String name;
     @NotBlank
+    @Size(min = 0, max = 20)
+    private String type;
+    @NotBlank
     @Size(min = 0, max = 100)
     private String description;
 }

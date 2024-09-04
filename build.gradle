@@ -20,7 +20,7 @@ version = '0.0.1-SNAPSHOT'
 apply from: 'sonarqube.gradle'
 
 java {
-	sourceCompatibility = '17'
+	sourceCompatibility = '21'
 }
 
 repositories {
@@ -117,6 +117,7 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
 	// for log tracing
 	implementation 'io.micrometer:micrometer-tracing'
